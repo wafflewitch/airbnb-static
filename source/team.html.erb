@@ -23,12 +23,26 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+  <body>
 
-  <body class="<%= page_classes %>">
+    <div class="container text-center padded">
+      <h1>Cool People</h1>
+      <ul class="list-inline text-center">
+        <% ["jess", "cristi"].each do |member| %>
+          <li>
+            <%= image_tag "#{member}.jpg", class: "img-circle img-team" %>
+            <h3><%= member.capitalize %></h3>
+          </li>
+        <% end %>
+      </ul>
 
-    <%= partial "navbar" %>
-    <%= yield %>
-    <%= partial "footer" %>
+     <!--  <h3 class="padded">
+        <a href="mailto:contact@airbnb.com">
+        <i class="fa fa-envelope"></i> contact@airbnb.com
+        </a>
+      </h3> -->
+
+    </div>
 
   </body>
 </html>

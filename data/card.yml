@@ -1,0 +1,15 @@
+- picture: card-brussels.jpeg
+  city: Brussels
+  description: Super cool room
+  name: Anne
+  avatar: anne.jpg
+- picture: card-london.jpeg
+  city: London
+  description: Super cool room
+  name: Romain
+  avatar: romain.jpeg
+- picture: card-paris.jpg
+  city: Paris
+  description: Super cool room
+  name: Seb
+  avatar: seb.jpg
